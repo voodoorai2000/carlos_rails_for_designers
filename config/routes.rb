@@ -1,8 +1,6 @@
 IntroPractica::Application.routes.draw do
   resources :contacts
-  
-  match 'welcome/about' => 'welcome#about', :as => :about
-  
+
   root :to => "welcome#index"
 
   # The priority is based upon order of creation:

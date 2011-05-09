@@ -1,4 +1,4 @@
-<%= form_for @contact, :html => {:class => "contact_form"} do |f| %>
+<%= form_for(@contact) do |f| %>
   <% if @contact.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@contact.errors.count, "error") %> prohibited this contact from being saved:</h2>
@@ -13,7 +13,7 @@
 
   <div class="field">
     <%= f.label :name %><br />
-    <%= f.text_field :name, :size => 20 %>
+    <%= f.text_field :name %>
   </div>
   <div class="field">
     <%= f.label :email %><br />
@@ -21,15 +21,15 @@
   </div>
   <div class="field">
     <%= f.label :newsletter %><br />
-    <%= f.check_box :newsletter, :checked => true %>
+    <%= f.check_box :newsletter %>
   </div>
   <div class="field">
     <%= f.label :sex %><br />
-    <%= f.select :sex, ["Macho", "Hembra"] %>
+    <%= f.text_field :sex %>
   </div>
   <div class="field">
     <%= f.label :notes %><br />
-    <%= f.text_area :notes, :size => "30x10" %>
+    <%= f.text_area :notes %>
   </div>
   <div class="actions">
     <%= f.submit %>
