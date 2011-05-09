@@ -1,0 +1,62 @@
+@charset "utf-8";
+/* CSS Document */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin:0;
+	padding:0
+}
+h1, h2, h3, h4, h5, h6 {
+	font-size:100%;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+select, input, textarea, button {
+	font-size:100%;
+	font-family:Arial, Helvetica, sans-serif;
+}
+input, select, button {
+	vertical-align:middle;
+}
+button {
+	cursor:pointer;
+}
+button span {
+	display:none
+}
+img {
+	vertical-align:top;
+}
+img, a img, fieldset {
+	border:none
+}
+ul, ol {
+	list-style:none;
+}
+li {
+	list-style-type:none;
+}
+em, i {
+	font-style:normal;
+}
+a {
+	text-decoration:none;
+	outline:none;
+}
+a:hover {
+	text-decoration:underline;
+}
+
+.clear {
+	clear:both;
+	visibility:hidden;
+	font-size:0;
+	line-height:0;
+	height:0;
+}
+.clearfix:after {
+	content:'';
+	display:block;
+	clear:both;
+	height:0;
+}

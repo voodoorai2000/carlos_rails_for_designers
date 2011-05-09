@@ -1,0 +1,40 @@
+.clearfix {
+	zoom:1
+}
+
+#upcoming_artist {
+	background: url(../images/common/black30.png);
+	/* Hack for rounder corners in IE*/
+	behavior: url(border-radius.htc);		
+}
+
+#upcoming_artist .livecast_date {
+	background: rgba(0, 0, 0, 0.7);	
+	background: url(../images/common/black70.png)
+}
+
+
+#artist_description {
+	background: url(../images/common/white10.png)
+}
+
+
+#past_artists { 
+	background: url(../images/common/white20.png);
+	/* Hack for rounder corners in IE*/
+	behavior: url(border-radius.htc);	
+}
+
+
+#about_beattaster {
+	background: url(../images/common/white20.png);
+	/* Hack for rounder corners in IE*/
+	behavior: url(border-radius.htc);		
+
+}
+
+#footer {
+	background: url(../images/common/black10.png);
+	/* Hack for rounder corners in IE*/
+	behavior: url(border-radius.htc);		
+}
