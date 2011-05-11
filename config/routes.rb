@@ -1,4 +1,6 @@
 IntroPractica::Application.routes.draw do
+  resources :users
+
   resources :contacts
 
   root :to => "welcome#index"
