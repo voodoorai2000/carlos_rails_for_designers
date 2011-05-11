@@ -1,0 +1,22 @@
+/* CSS Document */
+@import 'style.css';
+
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.2;
+	color: #333;
+	background: #ddd
+}
+
+#main_navigation li a {
+	background: #aaa;
+	color: #003399;
+	box-shadow: 1px 1px 2px #003399
+}
+
+
+#main_navigation li a:hover {
+	background: #003399;
+	color: #fff;
+}

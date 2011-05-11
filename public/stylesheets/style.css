@@ -57,6 +57,32 @@ a:active {
 }
 
 
+/*
+* Navigation
+* ************************************/
+#main_navigation {
+	overflow: hidden;
+}
+
+#main_navigation li a {
+	float: left;
+	position: relative;
+	background: #eee;
+	border-radius: 4px 4px 4px 4px;
+	box-shadow: 1px 1px 2px #C26421;
+	color: #E96C10;
+	margin: 20px 10px 20px 0;
+	padding: 4px 9px;
+	text-align: center;
+	text-decoration: none;
+}
+
+
+#main_navigation li a:hover {
+	background: #E96C10;
+	color: #fff;
+}
+
 
 /*
 * Contact Form
@@ -113,3 +139,39 @@ a:active {
   font-size: 12px;
   list-style: square;
 }
+
+
+/*
+* Table formating
+* ************************************/
+
+table {
+	font: 11px/24px Verdana, Arial, Helvetica, sans-serif;
+	border-collapse: collapse;
+	width: 640px;
+	}
+
+th {
+	padding: 0 0.5em;
+	text-align: left;
+	}
+
+tr.yellow th {
+	border-top: 1px solid #FB7A31;
+	border-bottom: 1px solid #FB7A31;
+	background: #FFC;
+	}
+
+td {
+	border-bottom: 1px solid #CCC;
+	padding: 0 0.5em;
+	}
+
+td:first-child {
+	width: 190px;
+	}
+
+td+td {
+	border-left: 1px solid #CCC;
+	text-align: center;
+	}
