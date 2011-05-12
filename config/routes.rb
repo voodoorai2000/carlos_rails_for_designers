@@ -1,7 +1,15 @@
 IntroPractica::Application.routes.draw do
   resources :users
 
-  resources :contacts
+  resources :contacts do
+    member do
+      get :unsubscribe
+    end
+    
+    collection do
+      get :active
+    end
+  end
 
   root :to => "welcome#index"
 

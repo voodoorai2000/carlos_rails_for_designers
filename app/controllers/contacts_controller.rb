@@ -47,7 +47,7 @@ class ContactsController < ApplicationController
         # Tell the UserMailer to send a welcome Email after save
         UserMailer.welcome_email(@contact).deliver
         
-        format.html { redirect_to(@contact, :notice => '¡Gracias nos pondremos en contacto con usted muy pronto!') }
+        format.html { redirect_to(@contact, :notice => 'Gracias nos pondremos en contacto con usted muy pronto') }
         format.xml  { render :xml => @contact, :status => :created, :location => @contact }
       else
         format.html { render :action => "new" }
@@ -82,5 +82,13 @@ class ContactsController < ApplicationController
       format.html { redirect_to(contacts_url) }
       format.xml  { head :ok }
     end
+  end
+  
+  def unsubscribe
+    @contact = Contact.find(params[:id])
+  end
+  
+  def active
+    @contacts = Contact.active
   end
 end

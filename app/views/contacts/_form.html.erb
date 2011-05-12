@@ -25,7 +25,7 @@
   </div>
   <div class="field">
     <%= f.label :newsletter %><br />
-    <%= f.check_box :newsletter, :checked => true %>
+    <%= f.check_box :newsletter, :checked => (@contact.newsletter ? true : false) %>
   </div>
   <div class="field">
     <%= f.label :sex %><br />
